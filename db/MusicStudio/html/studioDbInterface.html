@@ -1,0 +1,87 @@
+<html>
+<head>
+  <title>Music Studio Db Interface</title>
+</head>  
+INSERT ALBUM
+<p></p>
+  <form name = "insertAlbum" action = "insertAlbum.php" method = "get">
+    Album Code: <br><input type="text" name="AlbumCode">INT (>=11)<br>
+    Title: <br><input type="text" name="Title">VARCHAR<br>
+    Record Company: <br><input type="text" name="RcName">VARCHAR<br>
+    <input type="submit" value="Submit">
+  </form>
+<br>
+<br>
+INSERT ENGINEER
+<p></p> 
+  <form name = "insertEngineer" action = "insertEng.php" method = "get">
+    Engineer Number: <br><input type="text" name="EngNum">INT (>=11)<br>
+    Engineer Name: <br><input type="text" name="EngName">VARCHAR<br>
+    Number Of Albums: <br><input type="text" name="NumOfAlbums">INT<br>
+    Degree: <br><input type="text" name="Degree">VARCHAR<br>
+    <input type="submit" value="Submit">
+  </form>
+<br>
+<br>
+DELETE RECORD COMPANY
+<p></p> 
+  <form name = "deleteRecordCo" action = "deleteRecordCo.php" method = "get">
+    Record Co Name: <br><input type="text" name="RcName">VARCHAR<br>
+    <input type="submit" value="Submit">
+  </form>
+<br>
+<br>
+DELETE PRODUCER
+<p></p> 
+  <form name = "deleteProd" action = "deleteProd.php" method = "get">
+    Producer Number: <br><input type="text" name="Pnum">INT (<=5)<br>
+    <input type="submit" value="Submit">
+  </form>
+<br>
+<br>
+UPDATE SOFTWARE
+<p></p> 
+  <form name = "updateSoftware" action = "updateSoftware.php" method = "get">
+    Machine Serial Number: <br><input type="text" name="Rserial">VARCHAR (<=5)<br>
+    Software: <br><input type="text" name="Software">VARCHAR<br>
+    Version: <br><input type="text" name="Version">VARCHAR<br>
+    <input type="submit" value="Submit">
+  </form>
+<br>
+<br>
+UPDATE MASTER COPY
+<p></p> 
+  <form name = "updateMaster" action = "updateMaster.php" method = "get">
+    Album Code: <br><input type="text" name="AlbumCode">INT (<=10)<br>
+    Record Company: <br><input type="text" name="RcName">VARCHAR<br>
+    <input type="submit" value="Submit">
+  </form> 
+<br>
+<br>
+LIST PRODUCERS & GROUPS THEY WORK WITH
+<p></p> 
+  <form name = "showPandG" action = "showPandG.php" method = "get">
+    <input type="submit" value="Submit">
+  </form>
+<br>
+<br>
+LIST ALBUM # & CREW MEMBER
+<p></p> 
+  <form name = "showNumAndC" action = "showNumAndC.php" method = "get">
+    <input type="submit" value="Submit">
+  </form>
+<br>
+<br>
+LIST ALBUM # and RECORD CO
+<p></p> 
+  <form name = "showAandRC" action = "showAandRC.php" method = "get">
+    <input type="submit" value="Submit">
+  </form> 
+<br>
+<br>
+LIST ALL GIBBONS GUITARS
+<p></p> 
+  <form name = "listGibbons" action = "listGibbons.php" method = "get">
+    <input type="submit" value="Submit">
+  </form>               
+</html>

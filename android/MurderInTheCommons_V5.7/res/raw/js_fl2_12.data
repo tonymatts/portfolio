@@ -1,0 +1,26 @@
+{
+    "urlBase": "res://raw",
+    "type": "spherical2",
+    "keep": "all",
+    "images":
+    {
+        "preview": "",
+        "image": "fl2_12"
+    },
+    "camera":
+    {
+    	"keep": "all"
+    },
+    "hotspots":
+	[
+		{
+			"id": 2,
+			"atv": 0.0,
+			"ath": 305.0,
+			"width": 0.05,
+			"height": 0.05,
+			"image": "hotspot",
+			"onClick": "lookAt(0.0, 305.0, true); load('res://raw/js_fl2_7', true, BLEND(2.0, 1.0), 0.0, 305.0)"
+		}
+	]
+}

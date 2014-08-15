@@ -1,0 +1,36 @@
+
+
+public class SelectionSort extends Sorter {
+  
+  
+  
+  public SelectionSort(int[] i) {
+		super(i);
+		// TODO Auto-generated constructor stub
+	}
+
+public void selectionSort(int[] a) {
+    int out, in, min;
+
+    for (out = 0; out < a.length - 1; out++) // outer loop
+    {
+      min = out; // minimum
+      for (in = out + 1; in < a.length; in++)
+        // inner loop
+        if (a[in] < a[min]) // if min greater,
+          min = in; // a new min
+      swap(out, min); // swap them
+    }
+  }
+
+  private void swap(int one, int two) {
+    int temp = list[one];
+    list[one] = list[two];
+    list[two] = temp;
+  }
+
+@Override
+void sort() {
+	selectionSort(list);
+}
+}

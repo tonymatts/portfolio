@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/mQTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:text="@string/m_quiz_title_string"
+        android:ems="16" >
+
+    </TextView>
+    
+    <TextView
+        android:id="@+id/mQQuestion1TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mQTitleTextView"
+        android:gravity="left"       
+        android:text="@string/m_quiz_question_1_string"
+        android:ems="10" >
+
+    </TextView>
+    
+	<EditText
+	    android:id="@+id/mQQ1EditText"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:inputType="textNoSuggestions"   
+	    android:layout_below="@id/mQQuestion1TextView"
+	    android:gravity="left">
+	    
+	</EditText>
+    
+    <TextView
+        android:id="@+id/mQQuestion2TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mQQ1EditText"
+        android:gravity="left"
+        android:text="@string/m_quiz_question_2_string"
+        android:ems="10" >
+
+    </TextView>
+    
+    <TableLayout 
+        android:id="@+id/mQTableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mQQuestion2TextView"
+        android:stretchColumns="*"
+        >
+        <TableRow 
+            android:id="@+id/mQEditTextTableRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+        </TableRow>
+        <TableRow 
+            android:id="@+id/mQAnagramTableRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+        </TableRow>
+        
+    </TableLayout>
+    
+    <TextView
+        android:id="@+id/mQQuestion3TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mQTableLayout"
+        android:gravity="left"      
+        android:text="@string/m_quiz_question_3_string"
+        android:ems="10" >
+
+    </TextView>
+    
+    <EditText
+	    android:id="@+id/mQQ3EditText"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:inputType="textNoSuggestions"  
+	    android:layout_below="@id/mQQuestion3TextView"
+	    android:layout_alignParentLeft="true">
+	    
+	</EditText>
+	
+    <Button 
+        android:id="@+id/mQSubmitAnswersButton"      
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/mQQuestion3TextView" 
+	    android:layout_toRightOf="@id/mQQ3EditText"	    
+        android:text="@string/m_quiz_submit_string"
+        />
+    
+    <Button 
+        android:id="@+id/mQReturnToMapButton"      
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/mQQuestion3TextView"   
+        android:text="@string/m_quiz_return_to_map_string"
+	    android:layout_alignParentRight="true"
+        />
+    
+
+
+
+
+</RelativeLayout>

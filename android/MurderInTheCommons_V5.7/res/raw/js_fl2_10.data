@@ -1,0 +1,36 @@
+{
+    "urlBase": "res://raw",
+    "type": "spherical2",
+    "keep": "all",
+    "images":
+    {
+        "preview": "",
+        "image": "fl2_10"
+    },
+    "camera":
+    {
+
+    	"keep": "all|~atvRange|~rotation|~fov",
+
+        "atvMin": -90.0,
+
+        "atvMax": 90.0,
+
+        "vLookAt": 0.0,
+
+        "hLookAt": 105.0
+
+    },
+    "hotspots":
+	[
+		{
+			"id": 3,
+			"atv": 0.0,
+			"ath": 48.0,
+			"width": 0.05,
+			"height": 0.05,
+			"image": "hotspot",
+			"onClick": "lookAt(0.0, 48.0, true); load('res://raw/js_fl2_7', true, BLEND(2.0, 1.0), 0.0, 48.0)"
+		}
+	]
+}

@@ -1,0 +1,43 @@
+import java.util.Random;
+
+public class SortDriver {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Random rand = new Random();
+		int tempNum = 0;
+		int[] listArray = new int[10000];
+		
+		for (int i = 0; i < 10000; i++) {
+			tempNum = rand.nextInt(50000);
+			listArray[i] = tempNum;
+		}
+		
+		//BubbleSort b = new BubbleSort(listArray);
+		//b.sort();
+
+		//HeapSort h = new HeapSort(listArray);
+		//h.sort();
+		
+		InsertionSort i = new InsertionSort(listArray);
+		long startTime = System.currentTimeMillis();
+		i.sort();
+		long endTime = System.currentTimeMillis();
+		System.out.println("That took " + (endTime - startTime) + " milliseconds");
+		
+		MergeSort m = new MergeSort(listArray);
+		//m.sort();
+		
+		QuickSort q = new QuickSort(listArray);
+		//q.sort();
+		
+		SelectionSort se = new SelectionSort(listArray);
+		//se.sort();
+		
+		ShellSort sh = new ShellSort(listArray);
+		//sh.sort();
+	}
+
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:gravity="center" >
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/panMessageRevealed"
+            android:visibility="invisible"
+            android:layout_span="4"
+	        android:clickable="false"
+	        android:ems="10"
+	        android:focusable="false"
+	        android:focusableInTouchMode="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/completed_message" >
+
+            <requestFocus />
+        </EditText>
+
+    </TableRow>
+
+       <TableRow
+           android:id="@+id/tableRow1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center" >
+           
+           <Button
+               style="?android:attr/buttonBarButtonStyle"
+               android:background = "@android:color/white"
+               android:id="@+id/panFortune"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/pan_fortune"
+               android:textSize="14sp" />
+
+           <Button
+               style="?android:attr/buttonBarButtonStyle"
+               android:background = "#FFD700"
+               android:id="@+id/panPhoneBookButton"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/pan_phone_book"
+               android:visibility="invisible"
+               android:textSize="14sp" />
+
+           <Button
+               style="?android:attr/buttonBarButtonStyle"
+               android:background = "@android:color/white"
+               android:id="@+id/panCrumpledMap"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/pan_crumpled_map"
+               android:visibility="invisible"
+               android:textSize="14sp" />
+
+           <Button
+               style="?android:attr/buttonBarButtonStyle"
+               android:background = "#FFD700"
+               android:id="@+id/panLoungeLetter"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/pan_lounge_letter"
+               android:visibility="invisible"
+               android:textSize="14sp" />
+       </TableRow>
+
+       <TableRow
+           android:id="@+id/tableRow2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center" >
+
+           <Button
+               style="?android:attr/buttonBarButtonStyle"
+               android:background = "@android:color/white"
+               android:id="@+id/panWriteNotes"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/keep_notes"
+               android:textSize="14sp" />
+
+           <Button
+               style="?android:attr/buttonBarButtonStyle"
+               android:background = "#FFD700"
+               android:id="@+id/panGhostLeg"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"            
+               android:text="@string/pan_ghost_leg"
+               android:visibility="gone"
+               android:textSize="14sp" />
+
+           <Button
+               style="?android:attr/buttonBarButtonStyle"
+               android:background = "@android:color/white"
+               android:id="@+id/panEnterSolution"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/pan_enter_solution"
+               android:visibility="gone"
+               android:textSize="14sp" />  
+           
+           <Button
+               style="?android:attr/buttonBarButtonStyle"
+               android:background = "#FFD700"
+               android:id="@+id/panMap"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"              
+               android:visibility="invisible"
+               android:text="@string/pan_map"
+               android:textSize="14sp" />    
+       </TableRow>
+
+</TableLayout>

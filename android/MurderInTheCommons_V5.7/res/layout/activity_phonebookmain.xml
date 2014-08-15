@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:configChanges="orientation|keyboardHidden"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:screenOrientation="portrait"
+    tools:context=".PhoneBookMain" >
+
+    <ImageView
+        android:id="@+id/phoneBookImageView"
+        android:layout_width="@dimen/phone_book_width"
+        android:layout_height="@dimen/phone_book_height"
+        android:layout_centerHorizontal="true"/>
+    
+    <TableRow
+        android:id="@+id/buttonsTableRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/prevFlier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:text="@string/front_cover"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/return_to_room"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/whichPageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@layout/p_b_buttons"
+        android:gravity="center"
+        android:text="@string/turn_to_phone_book_page"
+        android:textSize="16sp" />
+    
+    <include
+        android:id="@+id/phoneBookButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonsTableRow"
+        android:layout_centerHorizontal="true"
+        layout="@layout/p_b_buttons" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,750 @@
+run:
+MAIN MENU: Enter an option number (1 or 2):
+1 - Load a File
+2 - Exit
+1
+Which file would you like loaded?
+1 - CostList
+2 - PriceList
+3 - ProfitList
+4 - NameList
+1
+
+File Loaded
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+5
+
+New Order Form Ready For Items to Be Added
+state = NEW
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+6
+peanutbutter 0.45 1.95 chocolate peanutbutter false
+hamball 0.85 1.4 true 12 US
+chickensalad 0.35 1.75 true 0 true
+cheesecracker 0.65 1.35 true 16 Hungary
+cheesecake 0.13 0.65 true 16 true
+blueberrycream 0.1 0.6 false 22 false
+driedbeef 0.95 1.45 true 22 US
+twinkiepudding 0.35 0.75 false 12 false
+muffin 0.2 1.0 false 2 false
+peanutbar 0.3 0.8 false 12 false
+chiliskillet 0.73 2.26 false 6 false
+caramelapple 0.25 0.55 true 12 true
+dumpling 0.25 1.0 false 3 false
+strawberry 0.85 2.75 strawberry vanilla false
+hamburger 0.65 1.95 false 2 false
+eggplant 0.85 1.65 false 26 China
+souffle 0.44 1.28 false 12 Scotland
+friedrice 0.45 2.0 false 3 false
+MaltSpecial 1.25 2.95 chocolate butterpecan 2
+pumpkinpie 0.16 0.7 false 12 false
+pancake 0.35 0.8 true 16 true
+blackenedshrimp 0.45 1.4 false 12 UK
+crabmeat 0.35 1.1 true 32 US
+drumstick 0.2 0.5 false 16 false
+doublechocolate 0.95 2.95 hotfudge chocolate false
+parmesan 0.45 1.15 false 16 US
+fudge 0.15 0.75 false 12 false
+sundae 0.2 0.75 false 12 false
+ranchpretzel 0.55 1.25 true 22 Germany
+pastry 0.95 2.75 false 3 false
+frenshfries 0.56 1.38 false 16 France
+noodle 0.85 2.5 false 2 false
+milkshake 0.33 0.66 false 16 false
+biscuit 0.55 1.55 true 12 US
+chocolate 0.45 1.95 chocolate vanilla false
+Special 1.05 2.65 chocolate butterpecan 0
+
+-- New Order --
+state = NEW
+
+Enter the name of the item you want to add
+chocolate
+
+-- Item Added to Order --
+state = INPROCESS
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+7
+Current Order #1
+	1 - chocolate 0.45 1.95 chocolate vanilla false
+	Order Total: 1.95
+
+-- Order Tended --
+state = TENDED
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+6
+peanutbutter 0.45 1.95 chocolate peanutbutter false
+hamball 0.85 1.4 true 12 US
+chickensalad 0.35 1.75 true 0 true
+cheesecracker 0.65 1.35 true 16 Hungary
+cheesecake 0.13 0.65 true 16 true
+blueberrycream 0.1 0.6 false 22 false
+driedbeef 0.95 1.45 true 22 US
+twinkiepudding 0.35 0.75 false 12 false
+muffin 0.2 1.0 false 2 false
+peanutbar 0.3 0.8 false 12 false
+chiliskillet 0.73 2.26 false 6 false
+caramelapple 0.25 0.55 true 12 true
+dumpling 0.25 1.0 false 3 false
+strawberry 0.85 2.75 strawberry vanilla false
+hamburger 0.65 1.95 false 2 false
+eggplant 0.85 1.65 false 26 China
+souffle 0.44 1.28 false 12 Scotland
+friedrice 0.45 2.0 false 3 false
+MaltSpecial 1.25 2.95 chocolate butterpecan 2
+pumpkinpie 0.16 0.7 false 12 false
+pancake 0.35 0.8 true 16 true
+blackenedshrimp 0.45 1.4 false 12 UK
+crabmeat 0.35 1.1 true 32 US
+drumstick 0.2 0.5 false 16 false
+doublechocolate 0.95 2.95 hotfudge chocolate false
+parmesan 0.45 1.15 false 16 US
+fudge 0.15 0.75 false 12 false
+sundae 0.2 0.75 false 12 false
+ranchpretzel 0.55 1.25 true 22 Germany
+pastry 0.95 2.75 false 3 false
+frenshfries 0.56 1.38 false 16 France
+noodle 0.85 2.5 false 2 false
+milkshake 0.33 0.66 false 16 false
+biscuit 0.55 1.55 true 12 US
+chocolate 0.45 1.95 chocolate vanilla false
+Special 1.05 2.65 chocolate butterpecan 0
+
+Enter the name of the item you want to add
+biscuit
+
+-- Item Added to Order --
+state = INPROCESS
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+7
+Current Order #1
+	1 - chocolate 0.45 1.95 chocolate vanilla false
+	2 - biscuit 0.55 1.55 true 12 US
+	Order Total: 3.5
+
+-- Order Tended --
+state = TENDED
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+6
+peanutbutter 0.45 1.95 chocolate peanutbutter false
+hamball 0.85 1.4 true 12 US
+chickensalad 0.35 1.75 true 0 true
+cheesecracker 0.65 1.35 true 16 Hungary
+cheesecake 0.13 0.65 true 16 true
+blueberrycream 0.1 0.6 false 22 false
+driedbeef 0.95 1.45 true 22 US
+twinkiepudding 0.35 0.75 false 12 false
+muffin 0.2 1.0 false 2 false
+peanutbar 0.3 0.8 false 12 false
+chiliskillet 0.73 2.26 false 6 false
+caramelapple 0.25 0.55 true 12 true
+dumpling 0.25 1.0 false 3 false
+strawberry 0.85 2.75 strawberry vanilla false
+hamburger 0.65 1.95 false 2 false
+eggplant 0.85 1.65 false 26 China
+souffle 0.44 1.28 false 12 Scotland
+friedrice 0.45 2.0 false 3 false
+MaltSpecial 1.25 2.95 chocolate butterpecan 2
+pumpkinpie 0.16 0.7 false 12 false
+pancake 0.35 0.8 true 16 true
+blackenedshrimp 0.45 1.4 false 12 UK
+crabmeat 0.35 1.1 true 32 US
+drumstick 0.2 0.5 false 16 false
+doublechocolate 0.95 2.95 hotfudge chocolate false
+parmesan 0.45 1.15 false 16 US
+fudge 0.15 0.75 false 12 false
+sundae 0.2 0.75 false 12 false
+ranchpretzel 0.55 1.25 true 22 Germany
+pastry 0.95 2.75 false 3 false
+frenshfries 0.56 1.38 false 16 France
+noodle 0.85 2.5 false 2 false
+milkshake 0.33 0.66 false 16 false
+biscuit 0.55 1.55 true 12 US
+chocolate 0.45 1.95 chocolate vanilla false
+Special 1.05 2.65 chocolate butterpecan 0
+
+Enter the name of the item you want to add
+milkshake
+
+-- Item Added to Order --
+state = INPROCESS
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+8
+Current Order #1
+	1 - chocolate 0.45 1.95 chocolate vanilla false
+	2 - biscuit 0.55 1.55 true 12 US
+	3 - milkshake 0.33 0.66 false 16 false
+	Order Total: 4.16
+
+-- Order Paid For--
+state = PAID
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+6
+
+Must create order new order to add to it.
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+5
+
+New Order Form Ready For Items to Be Added
+state = NEW
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+6
+peanutbutter 0.45 1.95 chocolate peanutbutter false
+hamball 0.85 1.4 true 12 US
+chickensalad 0.35 1.75 true 0 true
+cheesecracker 0.65 1.35 true 16 Hungary
+cheesecake 0.13 0.65 true 16 true
+blueberrycream 0.1 0.6 false 22 false
+driedbeef 0.95 1.45 true 22 US
+twinkiepudding 0.35 0.75 false 12 false
+muffin 0.2 1.0 false 2 false
+peanutbar 0.3 0.8 false 12 false
+chiliskillet 0.73 2.26 false 6 false
+caramelapple 0.25 0.55 true 12 true
+dumpling 0.25 1.0 false 3 false
+strawberry 0.85 2.75 strawberry vanilla false
+hamburger 0.65 1.95 false 2 false
+eggplant 0.85 1.65 false 26 China
+souffle 0.44 1.28 false 12 Scotland
+friedrice 0.45 2.0 false 3 false
+MaltSpecial 1.25 2.95 chocolate butterpecan 2
+pumpkinpie 0.16 0.7 false 12 false
+pancake 0.35 0.8 true 16 true
+blackenedshrimp 0.45 1.4 false 12 UK
+crabmeat 0.35 1.1 true 32 US
+drumstick 0.2 0.5 false 16 false
+doublechocolate 0.95 2.95 hotfudge chocolate false
+parmesan 0.45 1.15 false 16 US
+fudge 0.15 0.75 false 12 false
+sundae 0.2 0.75 false 12 false
+ranchpretzel 0.55 1.25 true 22 Germany
+pastry 0.95 2.75 false 3 false
+frenshfries 0.56 1.38 false 16 France
+noodle 0.85 2.5 false 2 false
+milkshake 0.33 0.66 false 16 false
+biscuit 0.55 1.55 true 12 US
+chocolate 0.45 1.95 chocolate vanilla false
+Special 1.05 2.65 chocolate butterpecan 0
+
+-- New Order --
+state = NEW
+
+Enter the name of the item you want to add
+noodle
+
+-- Item Added to Order --
+state = INPROCESS
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+7
+Current Order #2
+	1 - noodle 0.85 2.5 false 2 false
+	Order Total: 2.5
+
+-- Order Tended --
+state = TENDED
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+6
+peanutbutter 0.45 1.95 chocolate peanutbutter false
+hamball 0.85 1.4 true 12 US
+chickensalad 0.35 1.75 true 0 true
+cheesecracker 0.65 1.35 true 16 Hungary
+cheesecake 0.13 0.65 true 16 true
+blueberrycream 0.1 0.6 false 22 false
+driedbeef 0.95 1.45 true 22 US
+twinkiepudding 0.35 0.75 false 12 false
+muffin 0.2 1.0 false 2 false
+peanutbar 0.3 0.8 false 12 false
+chiliskillet 0.73 2.26 false 6 false
+caramelapple 0.25 0.55 true 12 true
+dumpling 0.25 1.0 false 3 false
+strawberry 0.85 2.75 strawberry vanilla false
+hamburger 0.65 1.95 false 2 false
+eggplant 0.85 1.65 false 26 China
+souffle 0.44 1.28 false 12 Scotland
+friedrice 0.45 2.0 false 3 false
+MaltSpecial 1.25 2.95 chocolate butterpecan 2
+pumpkinpie 0.16 0.7 false 12 false
+pancake 0.35 0.8 true 16 true
+blackenedshrimp 0.45 1.4 false 12 UK
+crabmeat 0.35 1.1 true 32 US
+drumstick 0.2 0.5 false 16 false
+doublechocolate 0.95 2.95 hotfudge chocolate false
+parmesan 0.45 1.15 false 16 US
+fudge 0.15 0.75 false 12 false
+sundae 0.2 0.75 false 12 false
+ranchpretzel 0.55 1.25 true 22 Germany
+pastry 0.95 2.75 false 3 false
+frenshfries 0.56 1.38 false 16 France
+noodle 0.85 2.5 false 2 false
+milkshake 0.33 0.66 false 16 false
+biscuit 0.55 1.55 true 12 US
+chocolate 0.45 1.95 chocolate vanilla false
+Special 1.05 2.65 chocolate butterpecan 0
+
+Enter the name of the item you want to add
+pastry
+
+-- Item Added to Order --
+state = INPROCESS
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+7
+Current Order #2
+	1 - noodle 0.85 2.5 false 2 false
+	2 - pastry 0.95 2.75 false 3 false
+	Order Total: 5.25
+
+-- Order Tended --
+state = TENDED
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+6
+peanutbutter 0.45 1.95 chocolate peanutbutter false
+hamball 0.85 1.4 true 12 US
+chickensalad 0.35 1.75 true 0 true
+cheesecracker 0.65 1.35 true 16 Hungary
+cheesecake 0.13 0.65 true 16 true
+blueberrycream 0.1 0.6 false 22 false
+driedbeef 0.95 1.45 true 22 US
+twinkiepudding 0.35 0.75 false 12 false
+muffin 0.2 1.0 false 2 false
+peanutbar 0.3 0.8 false 12 false
+chiliskillet 0.73 2.26 false 6 false
+caramelapple 0.25 0.55 true 12 true
+dumpling 0.25 1.0 false 3 false
+strawberry 0.85 2.75 strawberry vanilla false
+hamburger 0.65 1.95 false 2 false
+eggplant 0.85 1.65 false 26 China
+souffle 0.44 1.28 false 12 Scotland
+friedrice 0.45 2.0 false 3 false
+MaltSpecial 1.25 2.95 chocolate butterpecan 2
+pumpkinpie 0.16 0.7 false 12 false
+pancake 0.35 0.8 true 16 true
+blackenedshrimp 0.45 1.4 false 12 UK
+crabmeat 0.35 1.1 true 32 US
+drumstick 0.2 0.5 false 16 false
+doublechocolate 0.95 2.95 hotfudge chocolate false
+parmesan 0.45 1.15 false 16 US
+fudge 0.15 0.75 false 12 false
+sundae 0.2 0.75 false 12 false
+ranchpretzel 0.55 1.25 true 22 Germany
+pastry 0.95 2.75 false 3 false
+frenshfries 0.56 1.38 false 16 France
+noodle 0.85 2.5 false 2 false
+milkshake 0.33 0.66 false 16 false
+biscuit 0.55 1.55 true 12 US
+chocolate 0.45 1.95 chocolate vanilla false
+Special 1.05 2.65 chocolate butterpecan 0
+
+Enter the name of the item you want to add
+sundae
+
+-- Item Added to Order --
+state = INPROCESS
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+8
+Current Order #2
+	1 - noodle 0.85 2.5 false 2 false
+	2 - pastry 0.95 2.75 false 3 false
+	3 - sundae 0.2 0.75 false 12 false
+	Order Total: 6.0
+
+-- Order Paid For--
+state = PAID
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+5
+
+New Order Form Ready For Items to Be Added
+state = NEW
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+6
+peanutbutter 0.45 1.95 chocolate peanutbutter false
+hamball 0.85 1.4 true 12 US
+chickensalad 0.35 1.75 true 0 true
+cheesecracker 0.65 1.35 true 16 Hungary
+cheesecake 0.13 0.65 true 16 true
+blueberrycream 0.1 0.6 false 22 false
+driedbeef 0.95 1.45 true 22 US
+twinkiepudding 0.35 0.75 false 12 false
+muffin 0.2 1.0 false 2 false
+peanutbar 0.3 0.8 false 12 false
+chiliskillet 0.73 2.26 false 6 false
+caramelapple 0.25 0.55 true 12 true
+dumpling 0.25 1.0 false 3 false
+strawberry 0.85 2.75 strawberry vanilla false
+hamburger 0.65 1.95 false 2 false
+eggplant 0.85 1.65 false 26 China
+souffle 0.44 1.28 false 12 Scotland
+friedrice 0.45 2.0 false 3 false
+MaltSpecial 1.25 2.95 chocolate butterpecan 2
+pumpkinpie 0.16 0.7 false 12 false
+pancake 0.35 0.8 true 16 true
+blackenedshrimp 0.45 1.4 false 12 UK
+crabmeat 0.35 1.1 true 32 US
+drumstick 0.2 0.5 false 16 false
+doublechocolate 0.95 2.95 hotfudge chocolate false
+parmesan 0.45 1.15 false 16 US
+fudge 0.15 0.75 false 12 false
+sundae 0.2 0.75 false 12 false
+ranchpretzel 0.55 1.25 true 22 Germany
+pastry 0.95 2.75 false 3 false
+frenshfries 0.56 1.38 false 16 France
+noodle 0.85 2.5 false 2 false
+milkshake 0.33 0.66 false 16 false
+biscuit 0.55 1.55 true 12 US
+chocolate 0.45 1.95 chocolate vanilla false
+Special 1.05 2.65 chocolate butterpecan 0
+
+-- New Order --
+state = NEW
+
+Enter the name of the item you want to add
+fudge
+
+-- Item Added to Order --
+state = INPROCESS
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+7
+Current Order #3
+	1 - fudge 0.15 0.75 false 12 false
+	Order Total: 0.75
+
+-- Order Tended --
+state = TENDED
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+9
+
+Order #1
+	1 - chocolate 0.45 1.95 chocolate vanilla false
+	2 - biscuit 0.55 1.55 true 12 US
+	3 - milkshake 0.33 0.66 false 16 false
+	Order Total: 4.16
+	state = PAID
+
+Order #2
+	1 - noodle 0.85 2.5 false 2 false
+	2 - pastry 0.95 2.75 false 3 false
+	3 - sundae 0.2 0.75 false 12 false
+	Order Total: 6.0
+	state = PAID
+
+Order #3
+	1 - fudge 0.15 0.75 false 12 false
+	Order Total: 0.75
+	state = TENDED
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+8
+Current Order #3
+	1 - fudge 0.15 0.75 false 12 false
+	Order Total: 0.75
+
+-- Order Paid For--
+state = PAID
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+9
+
+Order #1
+	1 - chocolate 0.45 1.95 chocolate vanilla false
+	2 - biscuit 0.55 1.55 true 12 US
+	3 - milkshake 0.33 0.66 false 16 false
+	Order Total: 4.16
+	state = PAID
+
+Order #2
+	1 - noodle 0.85 2.5 false 2 false
+	2 - pastry 0.95 2.75 false 3 false
+	3 - sundae 0.2 0.75 false 12 false
+	Order Total: 6.0
+	state = PAID
+
+Order #3
+	1 - fudge 0.15 0.75 false 12 false
+	Order Total: 0.75
+	state = PAID
+
+FILE MENU: Enter an option number (1 - 10):
+
+1 - Display Current Menu
+2 - Search for an Item
+3 - Insert an Item
+4 - Delete an Item
+
+5 - Create New Order
+6 - Add an Item to Current Order
+7 - Show Current Order Form For Tending
+8 - Pay For Current Order
+9 - Show All Orders
+10 - EXIT
+10
+BUILD SUCCESSFUL (total time: 20 minutes 33 seconds)

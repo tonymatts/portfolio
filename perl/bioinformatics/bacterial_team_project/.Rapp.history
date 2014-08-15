@@ -1,0 +1,23 @@
+source("/Users/Tony/Documents/school_fall_13/csci451/proj2/dnawalk.csv")
+walk = read.table("dnawalk.csv",sep = ",")#
+plot(walk, xlab = "", ylab = "")
+source("/Users/Tony/Documents/school_fall_13/csci451/proj2/dnawalk.csv")
+walk = read.table("dnawalk.csv",sep = ",")#
+plot(walk, xlab = "", ylab = "")
+walk = read.table("dnawalk.csv",sep = ",")
+walk = read.table("/Users/Tony/Documents/school_fall_13/csci451/proj2/dnawalk.csv",sep = ",")
+plot(walk, xlab = "", ylab = "")
+walk = read.table("/Users/Tony/Documents/school_fall_13/csci451/proj2/dnawalk.csv",sep = ",")
+plot(walk, xlab = "", ylab = "")
+walk = read.table("/Users/Tony/Documents/school_fall_13/csci451/proj2/dnawalk.csv",sep = ",")
+plot(walk, xlab = "", ylab = "")
+source("/Users/Tony/Documents/school_fall_13/csci451/proj6Team/mouse.R")
+source("mouse.R")
+source("mouse.R")
+source("mouse.R")
+source("mouse.R")
+source("mouse.R")
+a=2
+b=3
+c=a+b
+c

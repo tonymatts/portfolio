@@ -1,0 +1,71 @@
+{
+    "urlBase": "res://raw",
+    "type": "spherical2",
+    "keep": "all",
+    "images":
+    {
+        "preview": "",
+        "image": "fl2_6"
+    },
+    "camera":
+    {
+    	"keep": "all"
+    },
+    "hotspots":
+	[
+		{
+			"id": 2,
+			"atv": 0.0,
+			"ath": 90.0,
+			"width": 0.05,
+			"height": 0.05,
+			"image": "hotspot",
+			"onClick": "lookAt(0.0, 90.0, true); load('res://raw/js_fl2_5', true, BLEND(2.0, 1.0), 0.0, 90.0)"
+		},
+		{
+			"id": 3,
+			"atv": 0.0,
+			"ath": 270.0,
+			"width": 0.05,
+			"height": 0.05,
+			"image": "hotspot",
+			"onClick": "lookAt(0.0, 270.0, true); load('res://raw/js_fl2_65', true, BLEND(2.0, 1.0), 0.0, 270.0)"
+		},
+		{
+			"id": 4,
+			"atv": -3.0,
+			"ath": 158.0,
+			"width": 0.033,
+			"height": 0.05,
+			"image": "ghost_leg_hotspot",
+			"onClick": "startActivity('GhostLeg0')"
+		},
+		{
+			"id": 4,
+			"atv": 18.0,
+			"ath": 176.0,
+			"width": 0.033,
+			"height": 0.05,
+			"image": "zombie_hotspot",
+			"onClick": "startActivity('GhostLeg1')"
+		},
+		{
+			"id": 4,
+			"atv": 8.0,
+			"ath": 158.0,
+			"width": 0.033,
+			"height": 0.05,
+			"image": "archery_hotspot",
+			"onClick": "startActivity('GhostLeg2')"
+		},
+		{
+			"id": 4,
+			"atv": 20.0,
+			"ath": 166.0,
+			"width": 0.033,
+			"height": 0.05,
+			"image": "undie_hotspot",
+			"onClick": "startActivity('GhostLeg3')"
+		}
+	]
+}

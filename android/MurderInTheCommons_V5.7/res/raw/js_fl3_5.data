@@ -1,0 +1,44 @@
+{
+    "urlBase": "res://raw",
+    "type": "spherical2",
+    "keep": "all",
+    "images":
+    {
+        "preview": "",
+        "image": "fl3_5"
+    },
+    "camera":
+    {
+    	"keep": "all"
+    },
+    "hotspots":
+	[
+		{
+			"id": 2,
+			"atv": 0.0,
+			"ath": 270.0,
+			"width": 0.05,
+			"height": 0.05,
+			"image": "hotspot",
+			"onClick": "lookAt(0.0, 270.0, true); load('res://raw/js_fl3_4', true, BLEND(2.0, 1.0), 0.0, 230.0)"
+		},
+		{
+			"id": 3,
+			"atv": -18.5,
+			"ath": 53.0,
+			"width": 0.007,
+			"height": 0.007,
+			"image": "crumpled_ball_of_paper_hotspot",
+			"onClick": "startActivity('ShiftingMap')"
+		},
+		{
+			"id": 4,
+			"atv": -3.0,
+			"ath": 73.0,
+			"width": 0.0182,
+			"height": 0.021,
+			"image": "phone_book_hotspot",
+			"onClick": "startActivity('PhoneBookMain')"
+		}
+	]
+}

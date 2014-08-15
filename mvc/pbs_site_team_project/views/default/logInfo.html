@@ -1,0 +1,109 @@
+{{response.files.append(URL(r=request,c='static',f='/js/d3/d3.js'))}}
+{{extend 'layout.html'}}
+<h1>Device Packets Sent</h1>
+<c1></c1>
+<script type="text/javascript">
+  // packets sent plotting :
+  var m = [50, 100, 50, 100];    // margins [top, right, bottom, left] 
+  var w = 800 - m[1] - m[3];     // width
+  var h = 300 - m[0] - m[2];     // height
+  
+  var dlist = {{=XML(response.json(dlist))}} // log info array
+  var data  = {{=XML(response.json(dp))}}    // data 2D array
+  var times = {{=XML(response.json(times))}}
+  var l     = data.length;                   // number of devices to plot
+  
+  // create a plot for each device :
+  for(var i = 0; i < l; i++)
+  {
+    var dd   = data[i];                   // x,y coordinates
+    var tt   = times[i];                  // times for x-coord
+    var dmax = Math.max.apply(null,dd);   // max y
+    var dmin = Math.min.apply(null,dd);   // min y
+    var dpad = (dmax - dmin)/10           // padding for scale
+    var dl   = dd.length;                 // length of data
+    
+    // create x-values :
+    for(var j = 0; j < dl; j++)
+    {
+      dd[j] = new Array(j, dd[j]);
+    }
+    
+    // create the scales from which we can interpolate pixel positions :
+    var x = d3.scale.linear().domain([0, dl]).range([0,w]);
+    var y = d3.scale.linear().domain([dmin - dpad, dmax + dpad]).range([h,0]);
+    
+    // convert a set of coordinates to the line you want using the scales above:
+    var line = d3.svg.line()
+                 .x(function(d){return x(d[0]);})
+                 .y(function(d){return y(d[1]);})
+    
+    // append the d3 element to the "c1" div and set its attributes :
+    var graph = d3.select("c1")
+                  .append("svg")
+                    .attr("width",  w + m[1] + m[3])
+                    .attr("height", h + m[0] + m[2])
+                  .append("g")
+                    .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+    
+    // x-axis :
+    var xAxis = d3.svg.axis().scale(x).tickSize(-h).tickSubdivide(true);
+    graph.append("g")
+         .attr("class", "x axis")
+         .attr("transform", "translate(0," + h + ")")
+         .call(xAxis);
+
+    // y-axis :
+    var yAxis = d3.svg.axis().scale(y).ticks(4).orient("left");
+    graph.append("g")
+         .attr("class", "y axis")
+         .attr("transform", "translate(-25,0)")
+         .call(yAxis);
+
+    // set the data values for the line :
+    graph.append("svg:path").attr("d", line(dd));
+    
+    // y-axis labels :
+    graph.append("text")
+          .attr("transform", "rotate(-90)")
+          .attr("y", 6)
+          .attr("dy", ".71em")
+          .style("text-anchor", "end")
+          .text("Packets");
+    
+    // x-axis labels :
+    graph.append("text")
+          .attr("x", w/2)
+          .attr("y", h + m[0] / 2)
+          .attr("dx", ".71em")
+          .style("text-anchor", "end")
+          .text("Index");
+    
+    // title :
+    graph.append("text")
+          .attr("x", w/2)
+          .attr("y", -10)
+          .attr("dx", ".71em")
+          .style("text-anchor", "end")
+          .text("Unit " + dlist[i]);
+  }
+</script>
+<h1>Log Info</h1>
+<ul>
+{{for i,inf, in zip(range(len(info)), info):}}
+  <h3>Device {{=dlist[i]}} :</h3>
+  {{=LI(inf)}}
+{{pass}}
+{{if auth.has_membership('engineer'):}}
+<h1>Create a log</h1>
+{{=form}}
+<h3>Previous logs</h3>
+{{for log in logs:}}
+  {{=LI(B(log.Date), "\n" + log.Report)}}
+{{pass}}
+{{pass}}
+</ul>
+
+
+
+

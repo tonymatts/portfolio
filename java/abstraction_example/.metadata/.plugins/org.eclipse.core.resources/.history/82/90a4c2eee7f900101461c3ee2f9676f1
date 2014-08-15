@@ -1,0 +1,36 @@
+
+
+public class BubbleSort extends Sorter{
+
+	public BubbleSort(int[] i) {
+		super(i);
+		// TODO Auto-generated constructor stub
+	}
+
+	private void sortStuff(int numbers[], int array_size)
+	{
+	  int i, j, temp;
+
+	  for (i = (array_size - 1); i >= 0; i--)
+	  {
+	    for (j = 1; j <= i; j++)
+	    {
+	      if (numbers[j-1] > numbers[j])
+	      {
+	        temp = numbers[j-1];
+	        numbers[j-1] = numbers[j];
+	        numbers[j] = temp;
+	      }
+	    }
+	  }
+	}
+
+	@Override
+	void sort() {
+		sortStuff(list, list.length);
+		for (int output : list)
+			System.out.println(output);
+	}
+
+
+}

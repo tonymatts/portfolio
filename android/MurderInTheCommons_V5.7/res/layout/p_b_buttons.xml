@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/whichPageTextView"
+       android:layout_centerHorizontal="true"
+       android:gravity="center" >
+
+       <TableRow
+           android:id="@+id/tableRow1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center" >
+
+           <Button
+               android:id="@+id/nextFlier"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/anagram"
+               android:textSize="14sp" />
+
+           <Button
+               android:id="@+id/button3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/bail_bonds"
+               android:textSize="14sp" />
+
+           <Button
+               android:id="@+id/button4"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/diagram"
+               android:textSize="14sp" />
+       </TableRow>
+
+       <TableRow
+           android:id="@+id/tableRow2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center" >
+
+           <Button
+               android:id="@+id/button5"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/fish"
+               android:textSize="14sp" />
+
+           <Button
+               android:id="@+id/button6"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/palindrome"
+               android:textSize="14sp" />
+
+           <Button
+               android:id="@+id/button7"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/rhetorical"
+               android:textSize="14sp" />
+       </TableRow>
+
+</TableLayout>

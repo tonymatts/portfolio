@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:entries="@array/suspects"
+        android:prompt="@string/prompt_suspects" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:entries="@array/weapons"
+        android:layout_below="@+id/spinner1"
+        android:prompt="@string/prompt_weapons" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinner2"
+        android:entries="@array/rooms"
+        android:prompt="@string/prompt_rooms" />
+
+    <Button
+        android:id="@+id/finalSubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/submit_button" />
+    
+    <Button 
+        android:id="@+id/solutionReturnToMapButton"      
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true" 
+        android:text="@string/solution_return_to_map_string"
+	    android:layout_alignParentRight="true"
+        />
+    
+    <Button 
+        android:id="@+id/creditsButton"      
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true" 
+        android:text="@string/credits_continue"
+        android:visibility="gone"
+	    android:layout_centerHorizontal="true"
+        />
+    
+    <ImageView
+        android:id="@+id/finalScreenImageView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/final_screen" />
+    
+    <ImageView
+        android:id="@+id/genericWrong"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/generic_wrong" />
+    
+    <ImageView
+        android:id="@+id/wrongWithRevolver"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/revolver_red_herring" />
+     <ImageView
+        android:id="@+id/wrongWithKnife"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/knife_red_herring" />
+
+</RelativeLayout>
+

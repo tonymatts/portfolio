@@ -1,0 +1,51 @@
+import java.util.Random;
+
+public class SortDriver {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Random rand = new Random();
+		int tempNum = 0;
+		int[] bArray = new int[10];
+		int[] hArray = new int[10];
+		int[] iArray = new int[10];
+		int[] mArray = new int[10];
+		int[] qArray = new int[10];
+		int[] seArray = new int[10];
+		int[] shArray = new int[10];
+		
+		for (int i = 0; i < 10; i++) {
+			tempNum = rand.nextInt(100);
+			bArray[i] = tempNum;
+			hArray[i] = tempNum;
+			iArray[i] = tempNum;
+			mArray[i] = tempNum;
+			seArray[i] = tempNum;
+			shArray[i] = tempNum;
+		}
+		
+		BubbleSort b = new BubbleSort(bArray);
+		//b.sort();
+		
+		HeapSort h = new HeapSort(hArray);
+		//h.sort();
+		
+		InsertionSort i = new InsertionSort(iArray);
+		//i.sort();
+		
+		//MergeSort m = new MergeSort(mArray);
+		//m.sort();
+		
+		QuickSort q = new QuickSort(qArray);
+		q.sort();
+		
+		SelectionSort se = new SelectionSort(seArray);
+		//se.sort();
+		
+		ShellSort sh = new ShellSort(shArray);
+		//sh.sort();
+	}
+
+}

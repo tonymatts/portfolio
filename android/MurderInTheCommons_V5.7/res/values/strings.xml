@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Murder in the Commons</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="turn_to_phone_book_page">Which listing would you like?</string>
+    <string name = "front_cover">Close Book</string>
+    <string name="anagram">A is for\nAnagram</string>
+    <string name="bail_bonds">B is for\nBail Bonds</string>
+    <string name="diagram">D is for\nDiagram</string>
+    <string name="fish">F\nis for\nFish</string>
+    <string name="palindrome">P\nis for\nPalindrome</string>
+    <string name="rhetorical">R is for\nRhetorical\nQuestion</string>
+    <string name="return_to_room">Return to Room</string>
+    <string name="up_arrow">⇧</string>
+    <string name="down_arrow">⇩</string>
+    <string name="introduction_string">You and your friends have just finished eating in the University Center Commons.  You are about to get up when a strange thing happens:\na waitress drops off a plate of six fortune cookies.\n\nThis is strange because there are no waitresses in the Commons&#8230; and why fortune cookies?\n\nFive of the fortune cookies contain slips with nonsensical strings of letters.  The remaining one contains a sentence about Confucius.</string>
+    <string name="confucius">To know as Confucius know,\nread as Confucius read.</string>
+    <string name="hint_button">Get\nHint</string>
+    <string name="fortune_cookie_hint">How DID Confucius read?</string>
+    <string name="completed_message">Must be cryptic lest falls in foes\' hands.  Diagram in third floor Yellow Pages clarifies who my enemies are.  I go to red x spot.</string>
+    <string name="waitress_returns_string">As you begin to get up from your meal, the waitress returns.  She is crying.  \"The poor man is dead,\" she wails, \"Killed!\"\n\nYou had thought you might be able to prevent a murder but now your goal is to SOLVE one.</string>
+	<string name="click_to_transcribe">Congratulations!\nClick to transcribe\nsolution.</string>
+	<string name="enter_fortune_cookie">Continue</string>
+	<string name="enter_uc">Continue</string>
+	<string name="see_map">Continue</string>
+	<string name="m_introduction_string">Upon uncrumpling the paper, you realize that it must be the diagram that you had been searching for.  The murder victim must have left it here to help you&#8230; but does it help you?\n\nIn order to demonstrate that you grasp the clues the poor victim left for you, you should answer a few questions.\n\nYou can flip back and forth between the diagram and the questions by pressing the button at the bottom of the next page.  For now, press the Continue button below.</string>
+	<string name="see_map_quiz">See\nQuiz</string>
+	<string name="m_quiz_title">The Quiz</string>
+	<string name="m_quiz_question_1">X</string>
+	<string name="m_quiz_question_2">X</string>
+	<string name="m_quiz_question_3">X</string>
+	<string name="pan_fortune">Show\nCookie\nMessage</string>
+	<string name="pan_phone_book">Examine\nPhone\nBook</string>
+	<string name="pan_crumpled_map">Crumpled\nMap</string>
+	<string name="pan_lounge_letter">Show\nLetter</string>
+	<string name="pan_ghost_leg">Examine\nGhost\nLeg</string>
+	<string name="pan_tracing_map">Display\nMap for\nTracing Path</string>
+	<string name="pan_enter_solution">Attempt\nto Solve\nthe Crime!</string>
+	<string name="pan_message_revealed">ddd</string>	
+    <string name="pan_map">Bldg\nMap</string>
+	<string name="see_diagram">Back to\nDiagram</string>
+	<string name="m_quiz_title_string">The Quiz</string>
+	<string name="m_quiz_question_1_string">This paper seems to imply that the location depicted in the map at the top of the page is really the same place as the location depicted in the map at the bottom of the page.\n\nWhat is the map at the top of the page a map of?  (Four letters&#8230; or perhaps six if you are British.)</string>
+	<string name="m_quiz_question_2_string">What is the map at the bottom of the page a map of?  (Unscramble the letters)</string>
+	<string name="m_quiz_question_3_string">Given that this paper “clarifies who my enemies are,” who are the enemies?\nEnter the last name of the suspect who is a military man.</string>
+	<string name="m_quiz_submit_string">Enter\nAnswers</string>
+	<string name="m_quiz_return_to_map_string">Return\nto Map</string>
+	<string name="m_q_q_2_answer">Second floor (first if you are British)</string>
+	<string name="m_q_q_2_anagram">CODNES ORLOF (STRIF FI OYU ERA THRISBI)</string>
+	<string name="floor1_label">F 1</string>
+    <string name="floor2_label">F 2</string>
+    <string name="floor3_label">F 3</string>
+    <string name="close_label">Back</string>
+    <string name="close_letter">Close\nLetter</string>
+    <string name="top_map1">Clue</string>
+    <string name="top_map2">Cluedo</string>
+    <string name="suspect">Mustard</string>
+    <string name="fold_map">Fold\nMap</string>
+    <string name="done_ghost_leg">Done</string>
+    <string-array name="suspects">
+        <item>Who is the murderer?</item>
+	    <item>Colonel Mustard</item>
+	    <item>Miss Scarlet</item>
+	    <item>Professor Plum</item>
+	    <item>Mr. Green</item>
+	    <item>Mrs. White</item>
+	    <item>Mrs. Peacock</item>
+	</string-array>
+	<string-array name="weapons">
+	    <item>What was the murder weapon?</item>
+	    <item>Rope</item>
+	    <item>Lead Pipe</item>
+	    <item>Knife</item>
+	    <item>Wrench</item>
+	    <item>Candlestick</item>
+	    <item>Revolver</item>
+	</string-array>
+	<string-array name="rooms">
+	    <item>Where did the murder take place?</item>
+	    <item>Hall</item>
+	    <item>Study</item>
+	    <item>Library</item>
+	    <item>Billiard Room</item>
+	    <item>Conservatory</item>
+	    <item>Kitchen</item>
+	    <item>Dining Room</item>
+	    <item>Ballroom</item>
+	    <item>Lounge</item>
+	</string-array>
+	<string name="prompt_suspects">Who is the murderer?</string>
+	<string name="prompt_weapons">What was the murder weapon?</string>
+	<string name="prompt_rooms">Where did the murder take place?</string>
+	<string name="submit_button">Submit</string>
+	<string name="solution_question_1_string">Who? (Last name only)</string>
+	<string name="solution_question_2_string">With What?</string>
+	<string name="solution_question_3_string">Where?</string>
+	<string name="solution_submit_string">Submit\nAnswer</string>
+	<string name="solution_return_to_map_string">Back\nTo Work</string>
+	<string name="zombie_sayings">Zombies?\nThis flier has nothing to do with the puzzle</string>
+	<string name="undie_sayings">Undie?  Must be what Undead do\nThis flier has nothing to do with the puzzle</string>
+	<string name="archery_sayings">Archery?  Useful if there were zombies\nThis flier has nothing to do with the puzzle</string>
+	<string name="keep_notes">Make\nNotes</string>
+	<string name="done_with_notes">Done</string>
+	<string name="read_next_page">Next\nPage</string>
+	<string name="read_prev_page">Prev\nPage</string>
+	<string name="done_reading">Done</string>
+	<string-array name="read_a_page">
+	    <item>Just minutes ago, in the Ballroom, I overheard my own death being plotted.  Why they hate me is not your concern; hate me they do.  They have gone to the extent of arming themselves in anticipation of my return.  I have one advantage:  nobody realizes that I have already returned.\n\nMy first thought upon hearing the news was to try to find you, my potential allies.  I was unable to approach directly because “a certain someone” was at a nearby table.\n\nHere is what help you can be:\n\nFirst:  Alphabetize the weapons.\n\nSecond:  When I have discovered who holds what, I will leave word on the bulletin board outside the Billiard Room.  In order to keep that clue a secret from prying eyes, it will be “hidden in plain sight”.  Consider consulting computers in the Study if you need more info.</item>
+	    <item>Third:  Come and find me by following these rules:\n\nEverybody knows that I always take the elevator.  Tonight I must not take the elevator under any circumstances!  Nor can I set foot outside (after all, they are watching for my return and would be bound to see (and hasten) my departure).  My last restriction is that I can’t, of course, go through locked doors and that will prevent me from entering the Library from the second floor; those doors are permanently locked since the second floor entrance is no longer in use.\n\nFor my own safety, I shall never revisit a room I have already been to within these accursed walls.  In fact, in the method of (if not, alas, the happy spirit of) the lovers in Königsberg, I will never backtrack nor traverse any portion (no matter how tiny) of the same corridor twice.  I will even go so far as to not allow myself to cross my own path.</item>
+	    <item>Wish me luck.\n\nEgad!  I hear ominous noises from the other side of this wall!  I think somebody is in the adjacent room!  Luckily for me, there is a secret passage from this place to one other; I just have to be unobserved while I slip two doorways down the hallway to the secret stairs!**\n\n\n\n**Editorial note:  Because this movement constitutes a legitimate SECRET passage, this small section of corridor DOES NOT COUNT AS TRAVERSED!</item>
+	</string-array>
+	<string name="credits_continue">Continue</string>
+	<string name="apache">which is covered by http://www.apache.org/licenses/LICENSE-2.0</string>
+	<string name="survey_request">\n\nPlease please please take the following Survey Monkey questionaire so that we can know what to improve.</string>
+    <string name="survey_link">https://www.surveymonkey.com/s/23QXFFZ</string>
+    <string name="web_link">\nIf you enjoyed this puzzle, it’d be great if you visited my website at michaelorford.webs.com</string>
+    <string name="user_manual">Continue</string>
+    <string name="user_manual_edit_text">This app should work on Android 4.0 and higher.  The screen size must be at least as large as the Galaxy Nexus.\nYou can generally zoom in (using Android’s standard “pinch zoom”) to get a closer look.  The only places where zoom does not work is where there is clearly no need of it.\n\nThere are a few items that can be clicked on inside the University Center.  Clues will point you to these items.  Randomly clicking on random items is very unlikely to accomplish anything but do click on items that clues lead you towards.\nKnown Conflict:  There is a known conflict between the Imagination PowerVR SGX GPU and the library we are using.  If, upon solving the first puzzle, the image only fills the lower left quarter of the screen, it is a serious bug that we cannot fix.</string>
+</resources>

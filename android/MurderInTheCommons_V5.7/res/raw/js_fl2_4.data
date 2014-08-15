@@ -1,0 +1,60 @@
+{
+    "urlBase": "res://raw",
+    "type": "spherical2",
+    "keep": "all",
+    "images":
+    {
+        "preview": "",
+        "image": "fl2_4"
+    },
+    "camera":
+    {
+    	"keep": "all"
+    },
+    "hotspots":
+	[
+		{
+			"id": 2,
+			"atv": 0.0,
+			"ath": 100.0,
+			"width": 0.05,
+			"height": 0.05,
+			"image": "hotspot_right",
+			"onClick": "lookAt(0.0, 100.0, true); load('res://raw/js_fl2_5', true, BLEND(2.0, 1.0), 0.0, 180.0)"
+		},
+		{
+			"id": 3,
+			"atv": -6.0,
+			"ath": 82.0,
+			"width": 0.0067,
+			"height": 0.0208,
+			"image": "candlestick_hotspot"
+		},
+		{
+			"id": 4,
+			"atv": 0.0,
+			"ath": 270.0,
+			"width": 0.05,
+			"height": 0.05,
+			"image": "hotspot",
+			"onClick": "lookAt(0.0, 270.0, true); load('res://raw/js_fl2_3', true, BLEND(2.0, 1.0), 0.0, 270.0)"
+		},
+		{
+			"id": 5,
+			"atv": 8.0,
+			"ath": 48.0,
+			"width": 0.03,
+			"height": 0.03,
+			"image": "closed_sign_hotspot"
+		},
+		{
+			"id": 6,
+			"atv": -21.0,
+			"ath": 323.0,
+			"width": 0.02,
+			"height": 0.01,
+			"image": "envelope_hotspot",
+			"onClick": "startActivity('Envelope')"
+		}
+	]
+}

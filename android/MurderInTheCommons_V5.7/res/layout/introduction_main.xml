@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".FortuneCookieMain" >
+   
+    <EditText
+        android:id="@+id/introductionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"     
+        android:text="@string/introduction_string">
+
+    </EditText>
+       <Button
+            android:id="@+id/userManual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/introductionEditText"
+            android:layout_centerHorizontal="true"
+            android:text="@string/user_manual">
+        
+      </Button>
+    
+     <Button
+            android:id="@+id/enterFortuneCookie"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/enter_fortune_cookie">
+        
+    </Button>
+    
+    <EditText
+        android:id="@+id/userManualEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"    
+        android:visibility="gone" 
+        android:text="@string/user_manual_edit_text">
+
+    </EditText>
+    
+ 
+        
+
+</RelativeLayout>

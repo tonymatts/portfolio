@@ -1,0 +1,35 @@
+{
+    "urlBase": "res://raw",
+    "type": "spherical2",
+    "keep": "all",
+    "images":
+    {
+        "preview": "",
+        "image": "fl2_5"
+    },
+    "camera":
+    {
+    	"keep": "all"
+    },
+    "hotspots":
+	[
+		{
+			"id": 2,
+			"atv": 0.0,
+			"ath": 0.0,
+			"width": 0.05,
+			"height": 0.05,
+			"image": "hotspot",
+			"onClick": "lookAt(0.0, 0.0, true); load('res://raw/js_fl2_4', true, BLEND(2.0, 1.0), 0.0, 0.0)"
+		},
+		{
+			"id": 3,
+			"atv": 0.0,
+			"ath": 270.0,
+			"width": 0.05,
+			"height": 0.05,
+			"image": "hotspot",
+			"onClick": "lookAt(0.0, 270.0, true); load('res://raw/js_fl2_6', true, BLEND(2.0, 1.0), 0.0, 270.0)"
+		}
+	]
+}

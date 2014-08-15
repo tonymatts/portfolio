@@ -1,0 +1,117 @@
+Test Cases:
+- Creates Order #1:
+yes
+- State is NEW:
+yes
+- Adds to order:
+yes
+- state is NEW before adding first item
+yes
+- item is added:
+yes
+- state is INPROCESS
+yes
+- Display order for tending:
+yes
+- Items are numbered sequentially when current order is displayed:
+yes
+- order total displayed:
+yes
+- state is TENDED:
+yes
+- Adds to Order:
+yes
+- state is INPROCESS again:
+yes
+- Display order for tending:
+yes
+- order total updated:
+yes
+- state is TENDED again:
+yes
+- Adds item to order:
+yes
+- state is INPROCESS again:
+yes
+- Pay for order:
+yes
+- state is PAID:
+yes
+-make sure an item can't be added to the PAID order
+yes
+
+- Create Order #2:
+yes
+- State is NEW:
+yes
+- Adds to order:
+yes
+- state is NEW before adding first item
+yes
+- item is added:
+yes
+- State is INPROCESS:
+yes
+- Displays order for tending:
+yes
+- Items are numbered sequentially when current order is displayed:
+yes
+- order total displayed:
+yes
+- state is TENDED:
+yes
+- Adds to Order:
+yes
+- state is INPROCESS again:
+yes
+- Display order for tending:
+yes
+- order total updated:
+yes
+- state is TENDED again:
+yes
+- Adds item to order:
+yes
+- state is INPROCESS again:
+yes
+- Pay for order:
+yes
+- state is PAID:
+yes
+
+- create Order #3
+yes
+- State is NEW:
+yes
+- Add to order:
+yes
+- state is NEW before adding first item
+yes
+- item is added:
+yes
+- State is INPROCESS:
+yes
+- Display order for tending:
+yes
+- order total displayed
+yes
+- state is TENDED:
+yes
+- Show all orders:
+yes
+- Orders are sequential:
+yes
+- Orders are formatted nicely:
+yes
+- Order #, item list, order state, and order total are listed:
+yes
+- state for current order should still be TENDED, while first two are PAID:
+yes
+- pay for current order:
+yes
+- Show all orders again:
+yes
+- state is now PAID for all orders:
+yes
+- exit program successfully
+yes

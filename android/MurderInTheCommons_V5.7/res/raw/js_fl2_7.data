@@ -1,0 +1,63 @@
+{
+    "urlBase": "res://raw",
+    "type": "spherical2",
+    "keep": "all",
+    "images":
+    {
+        "preview": "",
+        "image": "fl2_7"
+    },
+    "camera":
+    {
+    	"keep": "all"
+    },
+    "hotspots":
+	[
+		{
+			"id": 2,
+			"atv": 0.0,
+			"ath": 90.0,
+			"width": 0.05,
+			"height": 0.05,
+			"image": "hotspot",
+			"onClick": "lookAt(0.0, 90.0, true); load('res://raw/js_fl2_65', true, BLEND(2.0, 1.0), 0.0, 90.0)"
+		},
+		{
+			"id": 3,
+			"atv": 0.0,
+			"ath": 45.0,
+			"width": 0.05,
+			"height": 0.05,
+			"image": "hotspot",
+			"onClick": "lookAt(0.0, 45.0, true); load('res://raw/js_fl2_9', true, BLEND(2.0, 1.0), 0.0, 90.0)"
+		},
+
+		{
+			"id": 4,
+			"atv": 0.0,
+			"ath": 277.0,
+			"width": 0.05,
+			"height": 0.05,
+			"image": "hotspot",
+			"onClick": "lookAt(0.0, 277.0, true); load('res://raw/js_fl2_8', true, BLEND(2.0, 1.0), 0.0, 270.0)"
+		},
+		{
+			"id": 5,
+			"atv": 0.0,
+			"ath": 152.0,
+			"width": 0.05,
+			"height": 0.05,
+			"image": "hotspot",
+			"onClick": "lookAt(0.0, 152.0, true); load('res://raw/js_fl2_12', true, BLEND(2.0, 1.0), 0.0, 152.0)"
+		},
+				{
+			"id": 6,
+			"atv": 0.0,
+			"ath": 241.0,
+			"width": 0.05,
+			"height": 0.05,
+			"image": "hotspot",
+			"onClick": "lookAt(0.0, 241.0, true); load('res://raw/js_fl2_10', true, BLEND(2.0, 1.0), 0.0, 241.0)"
+		}
+	]
+}

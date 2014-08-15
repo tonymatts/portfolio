@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+     <Button
+        android:id="@+id/doneReadingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/done_reading"
+        android:textSize="14sp" />
+     <Button
+        android:id="@+id/readNextPageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/read_next_page"
+        android:textSize="14sp" />
+     <Button
+        android:id="@+id/readPrevPageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/read_prev_page"
+        android:visibility="invisible"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/readAPageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/readPrevPageButton"
+        android:layout_centerHorizontal="true"
+        android:ems="12" >
+
+        <requestFocus />
+    </TextView>
+
+</RelativeLayout>

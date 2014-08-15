@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+     <Button
+        android:id="@+id/doneGhostLegButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/done_ghost_leg"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/sayings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/doneGhostLegButton"
+        android:layout_centerHorizontal="true"
+        android:ems="10" >
+
+        <requestFocus />
+    </TextView>
+
+    <ImageView
+        android:id="@+id/ghostLegImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/sayings"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ghost_leg" />
+    
+      <ImageButton
+            android:id="@+id/prevFlier"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="155dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/left_arrow" />
+
+        <ImageButton
+            android:id="@+id/nextFlier"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/prevFlier"
+            android:layout_alignBottom="@+id/prevFlier"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/right_arrow" />
+
+</RelativeLayout>

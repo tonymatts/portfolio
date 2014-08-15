@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".FortuneCookieMain" >
+
+    <ImageView
+        android:id="@+id/fortuneCookieImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/fortune_cookie_plate" />
+    
+    <EditText 
+        android:id="@+id/fortuneCookieHintEditText"     
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentTop="true"
+        android:text="@string/fortune_cookie_hint"
+        android:visibility="invisible"/>
+    
+    <TableLayout
+        android:id="@+id/fortuneCookieTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    </TableLayout>
+    
+            <Button
+            android:id="@+id/hintButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/fortuneCookieTable"
+            android:maxHeight="100dp"
+            android:minWidth="0dp"
+            android:text="@string/hint_button" >
+        
+    </Button>
+    
+    <EditText
+        android:id="@+id/confuciusEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fortuneCookieTable"
+		android:layout_toRightOf="@id/hintButton"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:minWidth="260dp"
+        android:text="@string/confucius" >
+
+		<requestFocus />
+    </EditText>
+    
+
+    
+    <Button
+        android:id="@+id/transcribeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/click_to_transcribe"
+        android:visibility="invisible">
+        
+    </Button>
+    
+    <EditText
+        android:id="@+id/solutionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transcribeMessage"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" 
+        android:visibility="gone">
+
+    </EditText>
+    
+        <Button
+            android:id="@+id/enterUC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/solutionEditText"
+            android:layout_centerHorizontal="true"
+            android:text="@string/enter_uc"
+            android:visibility="invisible" >
+        
+    </Button>
+        
+
+</RelativeLayout>
